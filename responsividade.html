@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados Responsivos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start; /* Alinha tudo à esquerda */
+            align-items: flex-start; /* Alinha no topo */
+            flex-direction: column; /* Coloca os quadrados em coluna */
+            padding: 20px;
+            background-color: #f3f3f3; /* Cor de fundo suave */
+            font-family: Arial, sans-serif; /* Fonte agradável */
+        }
+
+        .quadrado {
+            width: 80vw; /* Largura dos quadrados em porcentagem da largura da tela */
+            height: 20vw; /* Altura dos quadrados proporcional à largura */
+            max-width: 300px; /* Largura máxima para não ficar muito grande */
+            margin: 10px 0; /* Margem em cima e embaixo */
+            display: flex;
+            justify-content: center; /* Centraliza o texto horizontalmente */
+            align-items: center; /* Centraliza o texto verticalmente */
+            font-size: 16px; /* Tamanho da fonte */
+            color: white; /* Cor do texto */
+            border-radius: 12px; /* Borda arredondada */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            transition: transform 0.3s; /* Transição suave */
+        }
+
+        .quadrado:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .amarelo {
+            background-color: rgb(190, 190, 11); /* Cor de fundo amarela */
+        }
+
+        .vermelho {
+            background-color: rgb(147, 5, 5); /* Cor de fundo vermelha */
+        }
+
+        .verde {
+            background-color: rgb(7, 70, 7); /* Cor de fundo verde */
+        }
+
+        .azul {
+            background-color: rgb(62, 62, 143); /* Cor de fundo azul */
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado amarelo">Amarelo</div>
+    <div class="quadrado vermelho">Vermelho</div>
+    <div class="quadrado verde">Verde</div>
+    <div class="quadrado azul">Azul</div>
+</body>
+</html>
+
+

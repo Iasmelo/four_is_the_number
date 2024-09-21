@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia Geek</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e2e2e2, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+        }
+
+        .title {
+            color: #00070e;
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #010f1e;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: bold; /* Negrito para o título */
+        }
+
+        .author {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic; /* Itálico para o autor */
+        }
+
+        .content {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 15px; /* Espaçamento interno para o conteúdo */
+            border-left: 4px solid #000000; /* Borda lateral para o conteúdo */
+            background-color: #f9f9f9; /* Fundo suave para o conteúdo */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s; /* Efeito de zoom na imagem */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Zoom ao passar o mouse */
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Lançamento do Novo Jogo "Donald no Mundo da Matemágica"</h1>
+        <p class="author">Por Iasmym Melo - 21 de Setembro de 2024</p>
+        <img src="https://www.netmundi.org/home/wp-content/uploads/2017/09/pato-donald-matem%C3%A1gica-2-1024x597.jpg" class="image">
+        <p class="content">Este jogo inovador combina diversão e aprendizado, desafiando jogadores a resolver problemas matemáticos em cenários encantadores. Com desafios que estimulam o raciocínio lógico, "Donald no Mundo da Matemágica" é ideal para crianças e adultos, promovendo o aprendizado de forma lúdica e interativa. Aventure-se com Donald e experimente o poder da Matemágica enquanto se diverte!
+        </p>
+    </div>
+
+</body>
+
+</html>

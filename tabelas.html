@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            padding: 20px;
+        }
+
+        .table-responsive {
+            overflow-x: auto; /* Permite rolagem horizontal */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+            font-size: 18px; /* Tamanho da fonte */
+        }
+
+        th {
+            background-color: #2e7d32; /* Cor de fundo dos cabeçalhos */
+            color: #ffffff; /* Cor do texto */
+            font-weight: bold; /* Negrito nos cabeçalhos */
+        }
+
+        tr:nth-child(even) {
+            background-color: #c8e6c9; /* Cor de fundo para linhas pares */
+        }
+
+        tr:hover {
+            background-color: #a5d6a7; /* Efeito de destaque ao passar o mouse */
+        }
+
+        /* Estilo para os status */
+        .ativo {
+            color: #388e3c; /* Verde para ativo */
+            font-weight: bold; /* Negrito */
+        }
+
+        .inativo {
+            color: #d32f2f; /* Vermelho para inativo */
+            font-weight: bold; /* Negrito */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                    <td>Programador</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>32</td>
+                    <td>Designer</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>41</td>
+                    <td>Engenheiro</td>
+                    <td class="inativo">Inativo</td>
+                </tr>
+                <tr>
+                    <td>Julia</td>
+                    <td>38</td>
+                    <td>Analista</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>29</td>
+                    <td>Designer</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>Elizabete</td>
+                    <td>33</td>
+                    <td>Professora</td>
+                    <td class="inativo">Inativo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
+
